@@ -10,21 +10,20 @@ class IdCmd extends Command {
             description : "gets the id of a specified user",
             args : [
                 {
-                    "key" : "user",
-                    "prompt" : "which user would you like to get the id of?",
-                    "type" : "string"
+                    key : "user",
+                    prompt : "which user would you like to get the id of?",
+                    type : "string",
+                    default : "self",
+                    validate : text => {
+                        return text.match(/<@!(.+)>/i) != null;
+                    }
                 }
             ]
         });
     }
 
     run(msg, { user }) {
-        var match = user.match(/<@!(.+)>/i);
-        if(match) {
-            return msg.reply(user.match(/<@!(.+)>/i)[1]);
-        } else {
-            return msg.reply("could not find this user");
-        }
+        return msg.reply(user.match(/<@!(.+)>/i)[1]);
     }
 }
 

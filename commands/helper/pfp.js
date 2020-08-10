@@ -10,9 +10,12 @@ class PfpCmd extends Command {
             description : "gets the profile picture of a specified user",
             args : [
                 {
-                    "key" : "user",
-                    "prompt" : "which user would you like to get the profile picture of?",
-                    "type" : "string"
+                    key : "user",
+                    prompt : "which user would you like to get the profile picture of?",
+                    type : "string",
+                    validate : text => {
+                        return text.match(/<@!(.+)>/i) != null;
+                    }
                 }
             ]
         });
@@ -20,15 +23,11 @@ class PfpCmd extends Command {
 
     run(msg, { user }) {
         var match = user.match(/<@!(.+)>/i);
-        if (match) {
-            msg.client.users.fetch(match[1]).then((usr) => {
-                return msg.say(usr.displayAvatarURL());
-            }).catch((err)=>{
-                return msg.say(err);
-            });
-        } else {
-            return msg.say("could not find this user");
-        }
+        msg.client.users.fetch(match[1]).then((usr) => {
+            return msg.reply(usr.displayAvatarURL());
+        }).catch((err)=>{
+            return msg.reply(err);
+        });
     }
 }
 

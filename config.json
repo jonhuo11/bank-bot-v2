@@ -1,8 +1,21 @@
 {
-    "token" : "assign environment variable",
+    "discordToken" : "NzQyMTUyNzM0Njg5NzIyNTU0.XzB9mA.MarVY4BdH8jjQiajMrc0DBRV7KM",
     "prefix" : "$",
-    "owner" : "",
+    "owner" : "613134824206630928",
     "invite" : "",
-    "commandFolder" : "commands",
-    "activity" : "For all your banking needs"
+    "activity" : "For all your banking needs",
+
+    "firebaseURL" : "https://bank-bot-v2-fce5c.firebaseio.com",
+    "type": "service_account",
+    "project_id": "bank-bot-v2-fce5c",
+
+    "private_key_id": "2f15d94b4fd67b91045ba65b302601e8eaad4b41",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCgiSPgFvNuiT6D\noXe2Oj+StrOVvhZazVvhFhN+M2+4kdgz/GB9/5xhWTlJxrPbfBZglJRhwtHKi8up\nu+bZ4UUTGpJNk24nvrDoPDo27LZpZ6c6nKy6Aur1uO/oyjK8UWge4LTWIcb/vgY1\nDk9dNLXHjAwnZg9YOteoRtjju00gikR4HykP7HOnTuY2zr1e6Cu4O9toCiQoEcq2\n4ZNFTAQcYPS1WA+viYU0kjL8oeKQ7XpmWCzPme8IkUZdQvIo8qeYAuW0bSYs7oAt\ny5obtKDsErG1693afqvU2DF4MiB2JDRVhxtamGvZSNqOFAHI/hmM9007g3HFAnlx\nOU9AUExXAgMBAAECggEAH9n150FGfVj3sVA5G0vFT0u2p/A2KT/zid5CcdiswvcU\n6YOadYVgtqPoTO4Cw3qEShdQtXDdBQ3lk8C3VeVvOhIckw28XmBkYz+H4Vvn+VPa\nhzOMxb9MdQKDfzGXDWwtd2roFlBPVnCSdLZpIroRkw0DYFHMm5nZLgcYg16nN9xG\nkN3eSbfbAxe4L9aiNLZwCWUdGo1qLAstS63+IM0hM3ZZzKteYo7GT2+pyRWBo+C2\nd0NTJx+GDfZjiZstbQrci6jZdEBUOQcUfEIskLHrikjvqVOsvY2LJMiDwO/vE6KW\nq7I4kUWrIIFtU2KgCyN0PmZj9ZqpOK3A6DcpIL9iwQKBgQDXMHsyEba9Wvh4Bf9F\n91yu0KFFW0uHDB2oNL23pE57NaPuzrxsvhQkraaUocKNwCZ7rvcqDKtU3x5/edCn\nhmAmZ9ITRxAyR1AIUZYclmvyjIa1aAbjC0cBc2d/gMvr+AEsMhsCBtf/I2K03bzN\nhaZnd6Kr6/w4tKsRcy0KOuk5twKBgQC++zQ71F7YW+p6Fz1SwjvWDd+4QQZrn/QH\nmRcfrICsx8xLrIGMlFADJNEYRD7SiLaRkV2x7zJODyMDDesnctz4zQQCqQVzcmuB\nlEvW4s+YxY83JVS+7zliZU5FONPsuDjrJwHv9BWL85v3kGh2PcztwoLostc8xzOu\nW2ft2HICYQKBgHUVEdK6RJ1eg9Z6HNyqrCkJptWfyMZf1zsQBzGGGpV7KAjlPyxD\nd55FRV+Va8/IfqfJGP4uCoKRK3zcgKTFvkbnMiv+/Fb+6hK8oVpIlc9QmnLVePnL\nxwSJEAUVxN5NAAZV9M/zfU56qFgUVYfVcibVtxKnwYHw+yrxac4pI4CdAoGAINYI\nERFejUygcAV24bfLme4gvQlRFUgXKQdFVojORubDVW9/hrApYaD+4nE5a/FdkoGv\n3lwGBi3ME0ZdXBb/rzdwrRRqf4L4wPrCX1v33Yh6Kz0b6QgwkZ5har1ukpDKGIRI\nbP1Ghx2Hf3UwwMO3bFm5MFEveJ+3Xw8QO3CviYECgYAxz34jkhnUzgmPpjzlVLXd\nNFJ832/kvayxwoGchZgQevyo6OjDYlBg6DG6I7+x9AKvX80EGNU7PHyxA1WuAdXE\nnfQigQ4vzmA49gObzWG1ECBNs49pMNOOlcISbSRjU5UrIlA8g0I6OiKNa36U/G7Q\nbGKIKqy3CLVy54MqkiV21Q==\n-----END PRIVATE KEY-----\n",
+
+    "client_email": "firebase-adminsdk-xsnb3@bank-bot-v2-fce5c.iam.gserviceaccount.com",
+    "client_id": "100666606277113456601",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xsnb3%40bank-bot-v2-fce5c.iam.gserviceaccount.com"
 }
