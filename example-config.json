@@ -1,0 +1,21 @@
+{
+    "discordToken" : "<your Discord bot token here>",
+    "prefix" : "$",
+    "owner" : "<your Discord ID>",
+    "invite" : "<invite link to bot support Discord>",
+    "activity" : "<MOTD>",
+
+    "firebaseURL" : "<https://YOUR_FIREBASE_APP_NAME_HERE.firebaseio.com>",
+    "type": "service_account",
+    "project_id": "<your Firebase app name>",
+
+    "private_key_id": "<your Firebase private key ID>",
+    "private_key": "",
+
+    "client_email": "<your Firebase client email>",
+    "client_id": "<your Firebase client Id>",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "<your Google x509 cert URL here>"
+}

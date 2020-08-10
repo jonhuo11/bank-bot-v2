@@ -1,2 +1,6 @@
+# omit node_modules/ folder to save space on remote
 node_modules/
+
+# your own config.json containing private tokens/keys
+# set the environment variable BANKBOTCONFIG to be the full path to this file
 config.json
