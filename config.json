@@ -1,5 +1,5 @@
 {
-    "token" : "environment variable",
+    "token" : "assign environment variable",
     "prefix" : "$",
     "owner" : "",
     "invite" : "",

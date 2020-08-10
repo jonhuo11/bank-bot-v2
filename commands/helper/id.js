@@ -19,7 +19,12 @@ class IdCmd extends Command {
     }
 
     run(msg, { user }) {
-        return msg.reply(user.match(/<@!(.+)>/i));
+        var match = user.match(/<@!(.+)>/i);
+        if(match) {
+            return msg.reply(user.match(/<@!(.+)>/i)[1]);
+        } else {
+            return msg.reply("could not find this user");
+        }
     }
 }
 
