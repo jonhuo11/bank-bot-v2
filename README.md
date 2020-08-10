@@ -1,6 +1,6 @@
 ## Bank Bot v2
-Created by jonhuo11
-Discord ID is 613134824206630928
+Created by jonhuo11 \n
+Discord ID is 613134824206630928\n
 Development status is **WIP**
 
 ## Description
