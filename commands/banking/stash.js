@@ -1,5 +1,5 @@
 const { Command } = require("discord.js-commando");
-const fb = require("../../firebase.js");
+const fb = require("../../firebase-util.js");
 
 class StashCmd extends Command {
     constructor(client) {

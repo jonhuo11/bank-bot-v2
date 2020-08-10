@@ -1,5 +1,5 @@
 const { Command } = require("discord.js-commando");
-const fb = require("../../firebase.js");
+const fb = require("../../firebase-util.js");
 
 class ListCmd extends Command {
     constructor(client) {
@@ -24,25 +24,13 @@ class ListCmd extends Command {
     }
 
     run (msg, { user }) {
+        var userId = msg.author.id;
+        if (user != "self") {
+            userId = user.match(/<@!(.+)>/i)[1];
+        }
+
         // hide private entries if not in a DM with the bot
-        var isDm = false;
-        if (msg.channel.type == "dm") {
-            isDm = true;
-        }
-
-        var id = msg.author.id;
-        var isOwner = false; // whether or not to show private entries
-        if (user == "self") {
-            isOwner = true;
-        } else {
-            id = user.match(/<@!(.+)>/i)[1];
-            // check if they @ed themselves
-            if (id == msg.author.id) {
-                isOwner = true;
-            }
-        }
-
-        fb.isUserRegistered(id).then((userRef) => {
+        fb.getUser(userId).then((userRef) => {
             userRef.once("value").then((snap) => {
                 snap = snap.toJSON();
 
@@ -51,7 +39,7 @@ class ListCmd extends Command {
                 var output = "";
                 var hidden = 0;
                 for (var key in snap) {
-                    if (!isOwner || !isDm) {
+                    if (!fb.isPrivateAllowed(msg, userId)) {
                         if (snap[key].visibility == "public") {
                             output += ` \`${key}\``;
                         } else {

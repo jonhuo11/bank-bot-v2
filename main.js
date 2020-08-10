@@ -1,7 +1,7 @@
 const {CommandoClient} = require("discord.js-commando");
 const path = require("path");
 const fs = require("fs");
-const fb = require("./firebase.js");
+const fb = require("./firebase-util.js");
 
 const config = fb.config;
 const print = fb.log;
