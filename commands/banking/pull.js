@@ -42,13 +42,13 @@ class PullCmd extends Command {
                         if (fb.isPrivateAllowed(msg, userId)) {
                             return msg.reply(snap.url);
                         } else {
-                            return msg.reply("you are not allowed to view private deposits unless you are the owner AND in a DM with Bank Bot");
+                            return msg.reply("you are not allowed to view private deposits unless you are the owner of the deposit AND in a DM with bank bot");
                         }
                     } else {
                         return msg.reply(snap.url);
                     }
                 } else {
-                    return msg.reply("no file was found with this name under this user's bank account");
+                    return msg.reply(`no file was found with this name under the bank account of user <@!${userId}>`);
                 }
             }).catch((err) => {
                 return msg.reply(err);

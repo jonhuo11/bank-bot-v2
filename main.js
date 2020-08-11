@@ -32,7 +32,7 @@ client.once("ready", ()=>{
 client.on("message", (msg) => {
     if (!msg.author.bot && (msg.content.startsWith(config.prefix) || msg.channel.type == "dm")) {
         // trims command output to a character limit
-        print(`Received command ${msg.content.substring(0, 35)} from user ${msg.author.tag} in server ${msg.guild.name}`);
+        print(`Received command ${msg.content.substring(0, 35)} from user ${msg.author.tag} in server ${(!msg.guild ? msg.channel.type : msg.guild.name)}`);
     }
 });
 

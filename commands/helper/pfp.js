@@ -25,7 +25,7 @@ class PfpCmd extends Command {
         var match = user.match(/<@!(.+)>/i);
         msg.client.users.fetch(match[1]).then((usr) => {
             return msg.reply(usr.displayAvatarURL());
-        }).catch((err)=>{
+        }).catch((err) => {
             return msg.reply(err);
         });
     }

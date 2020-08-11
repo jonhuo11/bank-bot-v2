@@ -41,12 +41,12 @@ class ListCmd extends Command {
                 for (var key in snap) {
                     if (!fb.isPrivateAllowed(msg, userId)) {
                         if (snap[key].visibility == "public") {
-                            output += ` \`${key}\``;
+                            output += `  \`${key}\``;
                         } else {
                             hidden++;
                         }
                     } else {
-                        output += ` \`${key}\``;
+                        output += `  \`${key}\``;
                     }
                 }
 
