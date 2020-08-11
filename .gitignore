@@ -4,3 +4,6 @@ node_modules/
 # your own config.json containing private tokens/keys
 # set the environment variable BANKBOTCONFIG to be the full path to this file
 config.json
+
+# ignore personal ec2 ssh key
+bankbotec2key.pem

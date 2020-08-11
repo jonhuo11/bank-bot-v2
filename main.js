@@ -24,7 +24,7 @@ client.registry
 
 // on connection with discord
 client.once("ready", ()=>{
-    print(`Logged in as ${client.user.tag}`);
+    print(`Logged in as ${client.user.tag} and ready to bank`);
     client.user.setActivity(config.activity);
 });
 
@@ -32,7 +32,7 @@ client.once("ready", ()=>{
 client.on("message", (msg) => {
     if (!msg.author.bot && (msg.content.startsWith(config.prefix) || msg.channel.type == "dm")) {
         // trims command output to a character limit
-        print(`Received command ${msg.content.substring(0, 35)} from user ${msg.author.tag}`);
+        print(`Received command ${msg.content.substring(0, 35)} from user ${msg.author.tag} in server ${msg.guild.name}`);
     }
 });
 
