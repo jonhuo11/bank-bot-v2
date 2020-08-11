@@ -51,9 +51,9 @@ class ListCmd extends Command {
                 }
 
                 if (hidden > 0) {
-                    return msg.reply(`the user ${msg.author.tag} has the following public entries in their bank account: ${output}. An additional \`${hidden}\` private entries can be shown if you are the account owner and use the command in a DM with bank bot.`);
+                    return msg.reply(`the user <@!${userId}> has the following public entries in their bank account: ${output}. An additional \`${hidden}\` private entries can be shown if you are the account owner and use the command in a DM with bank bot.`);
                 } else {
-                    return msg.reply(`the user ${msg.author.tag} has the following public/private entries in their bank account: ${output}`);
+                    return msg.reply(`the user <@!${userId}> has the following public/private entries in their bank account: ${output}`);
                 }
             }).catch((err) => {
                 return msg.reply(err);
