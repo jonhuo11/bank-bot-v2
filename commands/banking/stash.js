@@ -5,7 +5,7 @@ class StashCmd extends Command {
     constructor(client) {
         super(client, {
             name : "stash",
-            aliases : ["store", "deposit"],
+            aliases : ["put", "store", "deposit"],
             group : "banking",
             memberName : "stash",
             description : "stashes the attached file into your account",

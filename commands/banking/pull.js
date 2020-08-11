@@ -5,7 +5,7 @@ class PullCmd extends Command {
     constructor(client) {
         super(client, {
             name : "pull",
-            aliases : ["get", "retrieve", "grab"],
+            aliases : ["get", "retrieve", "grab", "view"],
             group : "banking",
             memberName : "pull",
             description : "views the file in the bank account of the specified user",
