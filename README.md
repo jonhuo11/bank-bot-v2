@@ -13,3 +13,5 @@ If you enjoy the features of Bank Bot v2 and you have a moment to spare, please 
 
 ## For Developers
 The source code for Bank Bot v2 is public and available on this Github page. The backend for this bot is handled using Firebase, so if you want to host this bot yourself you need to set up a realtime database on Firebase and create a config.json in this directory to setup the admin login tokens for both the Discord and Firebase APIs. See example-config.json for the template to use when creating your own config.json.
+
+Perhaps in the future a local database API will be used.
